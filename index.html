@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>GeekBlogTV</title>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="css/bigvideo.css">
+</head>
+
+<body>
+<div class="main">
+        <div id="overview" class="box">
+            <h1>GeekBlog<span class="dimmed"><small>.</small>TV</span></h1>
+            <h2>Nerd Mecha	</h2>
+        </div>
+    </div>
+
+    <!-- BigVideo Dependencies -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"><\/script>')</script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="//vjs.zencdn.net/4.3/video.js"></script>
+
+    <!-- BigVideo -->
+    <script src="lib/bigvideo.js"></script>
+
+    <!-- Demo -->
+    <script>
+	    $(function() {
+            var BV = new $.BigVideo();
+			BV.init();
+			BV.show('http://vjs.zencdn.net/v/oceans.mp4',{ambient:true});
+	    });
+    </script>
+</body>
+
+</html>
